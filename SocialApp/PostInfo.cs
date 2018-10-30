@@ -1,0 +1,21 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+using Android.App;
+using Android.Content;
+using Android.OS;
+using Android.Runtime;
+using Android.Views;
+using Android.Widget;
+
+namespace SocialApp
+{
+    class PostInfo
+    {
+        public string PostName { get; set; } = " ";
+        public string PostDate { get; set; } = " ";
+        public string PostText { get; set; } = " ";
+    }
+}
