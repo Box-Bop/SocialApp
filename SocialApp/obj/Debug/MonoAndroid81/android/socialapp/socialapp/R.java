@@ -3026,7 +3026,7 @@ containing a value of this type.
         public static final int icon_group=0x7f0800aa;
         public static final int ifRoom=0x7f08003a;
         public static final int image=0x7f08005f;
-        public static final int imageView2=0x7f0800ae;
+        public static final int imageView1=0x7f0800ae;
         public static final int info=0x7f0800a6;
         public static final int italic=0x7f080059;
         public static final int item_touch_helper_previous_elevation=0x7f080000;

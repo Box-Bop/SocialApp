@@ -21,7 +21,7 @@
 				android:src="@android:drawable/ic_menu_gallery"
 				android:layout_width="wrap_content"
 				android:layout_height="match_parent"
-				android:id="@+id/imageView2" />
+				android:id="@+id/imageView1" />
 			<TextView
 				android:text="Owner name"
 				android:textAppearance="?android:attr/textAppearanceLarge"
@@ -63,12 +63,12 @@
 		android:layout_height="wrap_content"
 		android:id="@+id/linearLayout4" >
 		<Button
-			android:text="👍: 1337"
+			android:text="1"
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
 			android:layout_marginLeft="36.5dp"
 			android:id="@+id/likeButton1"
-			android:layout_marginTop="7.5dp" />
+			android:layout_marginTop="7.5dp"/>
 		<Button
 			android:text="Comments: 12"
 			android:layout_width="wrap_content"

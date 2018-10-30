@@ -43,7 +43,16 @@ namespace SocialApp
             view.FindViewById<TextView>(Resource.Id.ownerTextView).Text = items[position].PostName;
             view.FindViewById<TextView>(Resource.Id.textView1).Text = items[position].PostDate;
             view.FindViewById<TextView>(Resource.Id.textView2).Text = items[position].PostText;
-            view.FindViewById<ImageView>(Resource.Id.imageView2);
+            view.FindViewById<Button>(Resource.Id.button1).Text = "Comments: " + items[position].PostComments;
+            view.FindViewById<Button>(Resource.Id.likeButton1).Text = "👍: " + Convert.ToString(items[position].PostLikes);
+            var like = view.FindViewById<Button>(Resource.Id.likeButton1);
+
+            like.Click += (sender, e) =>
+            {
+                var text = like.Text;
+                like.Text = "👍: " + Convert.ToString(Convert.ToInt16(text.Substring(3)) + 1);
+            };
+            //view.FindViewById<ImageView>(Resource.Id.imageView2);
             return view;
         }
     }

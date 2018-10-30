@@ -17,5 +17,7 @@ namespace SocialApp
         public string PostName { get; set; } = " ";
         public string PostDate { get; set; } = " ";
         public string PostText { get; set; } = " ";
+        public int PostLikes { get; set; }
+        public int PostComments { get; set; }
     }
 }

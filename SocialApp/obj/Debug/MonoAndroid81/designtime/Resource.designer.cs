@@ -2481,7 +2481,7 @@ namespace SocialApp
 			public const int image = 2131492920;
 			
 			// aapt resource value: 0x7F030004
-			public const int imageView2 = 2130903044;
+			public const int imageView1 = 2130903044;
 			
 			// aapt resource value: 0x7F0C000C
 			public const int info = 2131492876;

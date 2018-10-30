@@ -38,8 +38,19 @@ namespace SocialApp
                 new PostInfo
                 {
                     PostName = "Robert",
-                    PostDate = Convert.ToString(DateTime.Now),
-                    PostText = "test"
+                    PostDate = Convert.ToString(DateTime.Now.ToString("dd/mm/yyyy HH:mm:ss")),
+                    PostText = "test",
+                    PostLikes = 12,
+                    PostComments = 3
+                });
+            post.Add(
+                new PostInfo
+                {
+                    PostName = "Jüri",
+                    PostDate = Convert.ToString(DateTime.Now.ToString("dd/mm/yyyy HH:mm:ss")),
+                    PostText = "test2",
+                    PostLikes = 1337,
+                    PostComments = 439
                 });
 
             ListAdapter = new CustomAdapter(this, post);
