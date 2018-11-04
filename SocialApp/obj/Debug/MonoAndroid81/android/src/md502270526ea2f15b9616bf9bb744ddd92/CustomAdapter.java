@@ -26,6 +26,13 @@ public class CustomAdapter
 			mono.android.TypeManager.Activate ("SocialApp.CustomAdapter, SocialApp", "", this, new java.lang.Object[] {  });
 	}
 
+	public CustomAdapter (android.app.Activity p0)
+	{
+		super ();
+		if (getClass () == CustomAdapter.class)
+			mono.android.TypeManager.Activate ("SocialApp.CustomAdapter, SocialApp", "Android.App.Activity, Mono.Android", this, new java.lang.Object[] { p0 });
+	}
+
 
 	public java.lang.Object getItem (int p0)
 	{

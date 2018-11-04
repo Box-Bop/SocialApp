@@ -12,8 +12,15 @@ using Android.Widget;
 
 namespace SocialApp
 {
-    class CommentsActivity
+    [Activity(Label = "CommentsActivity")]
+    public class CommentsActivity : ListActivity
     {
+        protected override void OnCreate(Bundle savedInstanceState)
+        {
+            base.OnCreate(savedInstanceState);
 
+            SetContentView(Resource.Layout.commentsLayout);
+            ListAdapter = new CommentsAdapter(this, DataTransfer.Tranfer);
+        }
     }
 }

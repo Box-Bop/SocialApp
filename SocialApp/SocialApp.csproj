@@ -57,6 +57,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CommentsActivity.cs" />
+    <Compile Include="CommentsAdapter.cs" />
     <Compile Include="CommentsInfo.cs" />
     <Compile Include="CustomAdapter.cs" />
     <Compile Include="DataTransfer.cs" />

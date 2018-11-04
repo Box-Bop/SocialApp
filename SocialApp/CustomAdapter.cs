@@ -14,6 +14,13 @@ namespace SocialApp
 {
     class CustomAdapter : BaseAdapter<PostInfo>
     {
+        private Activity _context;
+
+        //constructor
+        public CustomAdapter(Activity context)
+        {
+            _context = context;
+        }
         List<PostInfo> items;
         Activity context;
         public CustomAdapter(Activity context, List<PostInfo> item) : base()
@@ -77,9 +84,10 @@ namespace SocialApp
 
             var commentButton = view.FindViewById<Button>(Resource.Id.button1);
 
-            commentButton.Click += delegate
+            commentButton.Click += (s, e) =>
             {
                 DataTransfer.Tranfer = items[position].PostCommentsInfo;
+                context.StartActivity(typeof(CommentsActivity));
             };
             return view;
         }
