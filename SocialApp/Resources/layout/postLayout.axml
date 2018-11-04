@@ -18,9 +18,9 @@
 			android:layout_height="match_parent"
 			android:id="@+id/linearLayout3" >
 			<ImageView
-				android:src="@android:drawable/ic_menu_gallery"
-				android:layout_width="wrap_content"
-				android:layout_height="match_parent"
+				android:src="@drawable/okhand"
+				android:layout_width="50.0dp"
+				android:layout_height="69.5dp"
 				android:id="@+id/imageView1" />
 			<TextView
 				android:text="Owner name"
@@ -54,6 +54,13 @@
 				android:layout_marginLeft="36.5dp"
 				android:layout_marginTop="7.5dp" />
 		</LinearLayout>
+		<ImageView
+			android:src="@android:drawable/ic_menu_gallery"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:id="@+id/imageView2"
+			android:layout_marginLeft="36.5dp"
+			android:layout_marginRight="36.5dp"/>
 	</LinearLayout>
 	<LinearLayout
 		android:orientation="horizontal"

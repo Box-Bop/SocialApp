@@ -2230,6 +2230,9 @@ namespace SocialApp
 			// aapt resource value: 0x7F090055
 			public const int avd_show_password = 2131296341;
 			
+			// aapt resource value: 0x7F010002
+			public const int bridge = 2130771970;
+			
 			// aapt resource value: 0x7F090056
 			public const int design_bottom_navigation_item_background = 2131296342;
 			
@@ -2247,6 +2250,9 @@ namespace SocialApp
 			
 			// aapt resource value: 0x7F09005B
 			public const int design_snackbar_background = 2131296347;
+			
+			// aapt resource value: 0x7F010003
+			public const int longboy = 2130771971;
 			
 			// aapt resource value: 0x7F09005C
 			public const int navigation_empty_icon = 2131296348;
@@ -2287,8 +2293,8 @@ namespace SocialApp
 			// aapt resource value: 0x7F09000C
 			public const int notify_panel_notification_icon_bg = 2131296268;
 			
-			// aapt resource value: 0x7F010002
-			public const int okhand = 2130771970;
+			// aapt resource value: 0x7F010004
+			public const int okhand = 2130771972;
 			
 			// aapt resource value: 0x7F090069
 			public const int tooltip_frame_dark = 2131296361;
@@ -2387,8 +2393,8 @@ namespace SocialApp
 			// aapt resource value: 0x7F0C001A
 			public const int bottom = 2131492890;
 			
-			// aapt resource value: 0x7F030011
-			public const int button1 = 2130903057;
+			// aapt resource value: 0x7F030012
+			public const int button1 = 2130903058;
 			
 			// aapt resource value: 0x7F0C001B
 			public const int buttonPanel = 2131492891;
@@ -2483,6 +2489,9 @@ namespace SocialApp
 			// aapt resource value: 0x7F030004
 			public const int imageView1 = 2130903044;
 			
+			// aapt resource value: 0x7F030009
+			public const int imageView2 = 2130903049;
+			
 			// aapt resource value: 0x7F0C000C
 			public const int info = 2131492876;
 			
@@ -2498,8 +2507,8 @@ namespace SocialApp
 			// aapt resource value: 0x7F0C003D
 			public const int left = 2131492925;
 			
-			// aapt resource value: 0x7F030010
-			public const int likeButton1 = 2130903056;
+			// aapt resource value: 0x7F030011
+			public const int likeButton1 = 2130903057;
 			
 			// aapt resource value: 0x7F0C000E
 			public const int line1 = 2131492878;
@@ -2516,8 +2525,8 @@ namespace SocialApp
 			// aapt resource value: 0x7F030003
 			public const int linearLayout3 = 2130903043;
 			
-			// aapt resource value: 0x7F030009
-			public const int linearLayout4 = 2130903049;
+			// aapt resource value: 0x7F030010
+			public const int linearLayout4 = 2130903056;
 			
 			// aapt resource value: 0x7F0C0040
 			public const int listMode = 2131492928;
@@ -2908,6 +2917,9 @@ namespace SocialApp
 			// aapt resource value: 0x7F020002
 			public const int activity_main = 2130837506;
 			
+			// aapt resource value: 0x7F020003
+			public const int commentsLayout = 2130837507;
+			
 			// aapt resource value: 0x7F0F001B
 			public const int design_bottom_navigation_item = 2131689499;
 			
@@ -2995,8 +3007,8 @@ namespace SocialApp
 			// aapt resource value: 0x7F0F0006
 			public const int notification_template_part_time = 2131689478;
 			
-			// aapt resource value: 0x7F020003
-			public const int postLayout = 2130837507;
+			// aapt resource value: 0x7F020004
+			public const int postLayout = 2130837508;
 			
 			// aapt resource value: 0x7F0F0038
 			public const int select_dialog_item_material = 2131689528;

@@ -56,7 +56,10 @@
     <Reference Include="Mono.Android" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CommentsActivity.cs" />
+    <Compile Include="CommentsInfo.cs" />
     <Compile Include="CustomAdapter.cs" />
+    <Compile Include="DataTransfer.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="PostInfo.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
@@ -103,6 +106,17 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\okhand.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\bridge.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\longboy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\commentsLayout.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.

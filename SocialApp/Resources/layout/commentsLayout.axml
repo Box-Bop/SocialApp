@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+	<LinearLayout
+		android:orientation="vertical"
+		android:minWidth="25px"
+		android:minHeight="25px"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/linearLayout2" >
+		<LinearLayout
+			android:orientation="horizontal"
+			android:minWidth="25px"
+			android:minHeight="25px"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:id="@+id/linearLayout3" >
+			<ImageView
+				android:src="@drawable/okhand"
+				android:layout_width="50.0dp"
+				android:layout_height="69.5dp"
+				android:id="@+id/imageView1" />
+			<TextView
+				android:text="Owner name"
+				android:textAppearance="?android:attr/textAppearanceLarge"
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:gravity="center_vertical"
+				android:id="@+id/ownerTextView" />
+			<TextView
+				android:text="Date posted"
+				android:textAppearance="?android:attr/textAppearanceMedium"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:textAlignment="viewEnd"
+				android:id="@+id/textView1" />
+			</LinearLayout>
+		<LinearLayout
+			android:orientation="horizontal"
+			android:minWidth="25px"
+			android:minHeight="25px"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:id="@+id/linearLayout1" >
+			<TextView
+				android:text="Owner post"
+				android:textAppearance="?android:attr/textAppearanceLarge"
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:id="@+id/textView2"
+				android:gravity="center_vertical"
+				android:layout_marginLeft="36.5dp"
+				android:layout_marginTop="7.5dp" />
+		</LinearLayout>
+		<ImageView
+			android:src="@android:drawable/ic_menu_gallery"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:id="@+id/imageView2"
+			android:layout_marginLeft="36.5dp"
+			android:layout_marginRight="36.5dp"/>
+	</LinearLayout>
+	<LinearLayout
+		android:orientation="horizontal"
+		android:minWidth="25px"
+		android:minHeight="25px"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/linearLayout4" >
+		<Button
+			android:text="1"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="36.5dp"
+			android:id="@+id/likeButton1"
+			android:layout_marginTop="7.5dp"/>
+	</LinearLayout>
+</LinearLayout>

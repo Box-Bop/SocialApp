@@ -5,6 +5,7 @@ using Android.Runtime;
 using Android.Widget;
 using System.Collections.Generic;
 using System;
+using Android.Content;
 
 namespace SocialApp
 {
@@ -17,43 +18,58 @@ namespace SocialApp
             // Set our view from the "main" layout resource
             SetContentView(Resource.Layout.activity_main);
 
-            //List<string> names = new List<string>();
-            //List<string> dates = new List<string>();
-            //List<string> texts = new List<string>();
-
-            //names.Add("Robert Tohver");
-            //dates.Add(Convert.ToString(DateTime.Now));
-            //texts.Add("test");
-
-            //names.Add("Jüri test");
-            //dates.Add(Convert.ToString(DateTime.Now));
-            //texts.Add("test2");
-
-            //PostInfo.PostNames = names.ToArray();
-            //PostInfo.PostDates = dates.ToArray();
-            //PostInfo.PostTexts = texts.ToArray();
-
             List<PostInfo> post = new List<PostInfo>();
             post.Add(
-                new PostInfo
-                {
-                    PostName = "Robert",
-                    PostDate = Convert.ToString(DateTime.Now.ToString("dd/mm/yyyy HH:mm:ss")),
-                    PostText = "test",
-                    PostLikes = 12,
-                    PostComments = 3
-                });
+                    new PostInfo
+                    {
+                        PostName = "Robert",
+                        PostDate = Convert.ToString(DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss")),
+                        PostText = "Can we hit 50 likes?",
+                        PostLikes = 49,
+                        PostCommentsAmount = 3,
+                        PostProfilePic = "okhand",
+                        PostImage = "longboy",
+                        PostCommentsInfo = new List<CommentsInfo>
+                        {
+                        new CommentsInfo
+                        {
+                            PostName = "Jeff",
+                            PostDate = Convert.ToString(DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss")),
+                            PostText = "So close",
+                            PostLikes = 3,
+                            PostProfilePic = "bridge"
+                        },
+                        new CommentsInfo
+                        {
+                            PostName = "Tere",
+                            PostDate = Convert.ToString(DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss")),
+                            PostText = "very funny",
+                            PostLikes = 0,
+                            PostProfilePic = "okhand"
+                        }
+                        }
+                    });
             post.Add(
                 new PostInfo
                 {
                     PostName = "Jüri",
-                    PostDate = Convert.ToString(DateTime.Now.ToString("dd/mm/yyyy HH:mm:ss")),
-                    PostText = "test2",
+                    PostDate = Convert.ToString(DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss")),
+                    PostText = "Lorem ipsum dolor sit amet, vestibulum lectus luctus amet. Sed class dui eu diam, commodo nec mi turpis. Sollicitudin pellentesque wisi diam ipsum ultricies, ante volutpat netus in vivamus vero turpis, purus auctor condimentum neque, pharetra lorem. Tristique massa ipsum",
                     PostLikes = 1337,
-                    PostComments = 439
+                    PostCommentsAmount = 439,
+                    PostProfilePic = "bridge",
+                    PostImage = ""
                 });
-
+            var comments = FindViewById<Button>(Resource.Id.button1);
+            //comments.Click += Comments_Click;
             ListAdapter = new CustomAdapter(this, post);
         }
+
+        //private void Comments_Click(object sender, EventArgs e)
+        //{
+        //    DataTransfer.Tranfer = post[e.Position].PostCommentsInfo;
+        //    var comments = new Intent(this, typeof(CommentsActivity));
+        //    StartActivity(comments);
+        //}
     }
 }

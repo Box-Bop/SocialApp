@@ -67,4 +67,7 @@ D:\Visual Studio projects\Mobile Apps\Bootleg Facebook\SocialApp\SocialApp\obj\D
 D:\Visual Studio projects\Mobile Apps\Bootleg Facebook\SocialApp\SocialApp\obj\Debug\MonoAndroid81\android\assets\System.ServiceModel.Internals.pdb
 D:\Visual Studio projects\Mobile Apps\Bootleg Facebook\SocialApp\SocialApp\obj\Debug\MonoAndroid81\android\assets\System.Xml.pdb
 D:\Visual Studio projects\Mobile Apps\Bootleg Facebook\SocialApp\SocialApp\obj\Debug\MonoAndroid81\SocialApp.csprojAssemblyReference.cache
+D:\Visual Studio projects\Mobile Apps\Bootleg Facebook\SocialApp\SocialApp\obj\Debug\MonoAndroid81\res\drawable\bridge.png
+D:\Visual Studio projects\Mobile Apps\Bootleg Facebook\SocialApp\SocialApp\obj\Debug\MonoAndroid81\res\drawable\longboy.png
+D:\Visual Studio projects\Mobile Apps\Bootleg Facebook\SocialApp\SocialApp\obj\Debug\MonoAndroid81\res\layout\commentslayout.xml
 D:\Visual Studio projects\Mobile Apps\Bootleg Facebook\SocialApp\SocialApp\obj\Debug\MonoAndroid81\linksrc\SocialApp.pdb

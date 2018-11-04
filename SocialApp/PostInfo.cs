@@ -12,12 +12,15 @@ using Android.Widget;
 
 namespace SocialApp
 {
-    class PostInfo
+    public class PostInfo
     {
         public string PostName { get; set; } = " ";
         public string PostDate { get; set; } = " ";
         public string PostText { get; set; } = " ";
         public int PostLikes { get; set; }
-        public int PostComments { get; set; }
+        public int PostCommentsAmount { get; set; }
+        public string PostProfilePic { get; set; } = " ";
+        public string PostImage { get; set; } = " ";
+        public List<CommentsInfo> PostCommentsInfo { get; set; }
     }
 }
