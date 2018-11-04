@@ -19,6 +19,6 @@ namespace SocialApp
         public string PostText { get; set; } = " ";
         public int PostLikes { get; set; }
         public string PostProfilePic { get; set; } = " ";
-        public string PostImage { get; set; } = " ";
+        public string PostImage { get; set; } = "";
     }
 }

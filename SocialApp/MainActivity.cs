@@ -37,7 +37,8 @@ namespace SocialApp
                             PostDate = Convert.ToString(DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss")),
                             PostText = "So close",
                             PostLikes = 3,
-                            PostProfilePic = "bridge"
+                            PostProfilePic = "bridge",
+                            PostImage = ""
                         },
                         new CommentsInfo
                         {
@@ -45,7 +46,8 @@ namespace SocialApp
                             PostDate = Convert.ToString(DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss")),
                             PostText = "very funny",
                             PostLikes = 0,
-                            PostProfilePic = "okhand"
+                            PostProfilePic = "okhand",
+                            PostImage = ""
                         }
                         }
                     });
@@ -58,7 +60,19 @@ namespace SocialApp
                     PostLikes = 1337,
                     PostCommentsAmount = 439,
                     PostProfilePic = "bridge",
-                    PostImage = ""
+                    PostImage = "",
+                    PostCommentsInfo = new List<CommentsInfo>
+                        {
+                        new CommentsInfo
+                        {
+                            PostName = "Lorem Ipsum",
+                            PostDate = Convert.ToString(DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss")),
+                            PostText = "Your post is a lorem ipsum text",
+                            PostLikes = 4,
+                            PostProfilePic = "okhand",
+                            PostImage = ""
+                        }
+                    }
                 });
             var comments = FindViewById<Button>(Resource.Id.button1);
             //comments.Click += Comments_Click;

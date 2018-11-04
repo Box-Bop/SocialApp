@@ -1,9 +1,9 @@
-D:\Visual Studio projects\Mobile Apps\Bootleg Facebook\SocialApp\SocialApp\obj\Debug\MonoAndroid81\res.flag
-D:\Visual Studio projects\Mobile Apps\Bootleg Facebook\SocialApp\SocialApp\obj\Debug\MonoAndroid81\SocialApp.csproj.CoreCompileInputs.cache
 D:\Visual Studio projects\Mobile Apps\Bootleg Facebook\SocialApp\SocialApp\bin\Debug\SocialApp.dll
 D:\Visual Studio projects\Mobile Apps\Bootleg Facebook\SocialApp\SocialApp\bin\Debug\SocialApp.pdb
 D:\Visual Studio projects\Mobile Apps\Bootleg Facebook\SocialApp\SocialApp\bin\Debug\SocialApp.SocialApp.apk
 D:\Visual Studio projects\Mobile Apps\Bootleg Facebook\SocialApp\SocialApp\bin\Debug\SocialApp.SocialApp-Signed.apk
+D:\Visual Studio projects\Mobile Apps\Bootleg Facebook\SocialApp\SocialApp\obj\Debug\MonoAndroid81\res.flag
+D:\Visual Studio projects\Mobile Apps\Bootleg Facebook\SocialApp\SocialApp\obj\Debug\MonoAndroid81\SocialApp.csproj.CoreCompileInputs.cache
 D:\Visual Studio projects\Mobile Apps\Bootleg Facebook\SocialApp\SocialApp\obj\Debug\MonoAndroid81\SocialApp.dll
 D:\Visual Studio projects\Mobile Apps\Bootleg Facebook\SocialApp\SocialApp\obj\Debug\MonoAndroid81\SocialApp.pdb
 D:\Visual Studio projects\Mobile Apps\Bootleg Facebook\SocialApp\SocialApp\obj\Debug\MonoAndroid81\android\bin\SocialApp.SocialApp.apk
@@ -31,6 +31,10 @@ D:\Visual Studio projects\Mobile Apps\Bootleg Facebook\SocialApp\SocialApp\obj\D
 D:\Visual Studio projects\Mobile Apps\Bootleg Facebook\SocialApp\SocialApp\obj\Debug\MonoAndroid81\res\mipmap-xxxhdpi\ic_launcher_round.png
 D:\Visual Studio projects\Mobile Apps\Bootleg Facebook\SocialApp\SocialApp\obj\Debug\MonoAndroid81\res\layout\postlayout.xml
 D:\Visual Studio projects\Mobile Apps\Bootleg Facebook\SocialApp\SocialApp\obj\Debug\MonoAndroid81\res\drawable\okhand.png
+D:\Visual Studio projects\Mobile Apps\Bootleg Facebook\SocialApp\SocialApp\obj\Debug\MonoAndroid81\res\drawable\bridge.png
+D:\Visual Studio projects\Mobile Apps\Bootleg Facebook\SocialApp\SocialApp\obj\Debug\MonoAndroid81\res\drawable\longboy.png
+D:\Visual Studio projects\Mobile Apps\Bootleg Facebook\SocialApp\SocialApp\obj\Debug\MonoAndroid81\res\layout\commentslayout.xml
+D:\Visual Studio projects\Mobile Apps\Bootleg Facebook\SocialApp\SocialApp\obj\Debug\MonoAndroid81\res\layout\commentsection.xml
 D:\Visual Studio projects\Mobile Apps\Bootleg Facebook\SocialApp\SocialApp\obj\Debug\MonoAndroid81\R.cs.flag
 D:\Visual Studio projects\Mobile Apps\Bootleg Facebook\SocialApp\SocialApp\obj\Debug\MonoAndroid81\R.txt
 D:\Visual Studio projects\Mobile Apps\Bootleg Facebook\SocialApp\SocialApp\obj\Debug\MonoAndroid81\uploadflags.txt
@@ -67,7 +71,4 @@ D:\Visual Studio projects\Mobile Apps\Bootleg Facebook\SocialApp\SocialApp\obj\D
 D:\Visual Studio projects\Mobile Apps\Bootleg Facebook\SocialApp\SocialApp\obj\Debug\MonoAndroid81\android\assets\System.ServiceModel.Internals.pdb
 D:\Visual Studio projects\Mobile Apps\Bootleg Facebook\SocialApp\SocialApp\obj\Debug\MonoAndroid81\android\assets\System.Xml.pdb
 D:\Visual Studio projects\Mobile Apps\Bootleg Facebook\SocialApp\SocialApp\obj\Debug\MonoAndroid81\SocialApp.csprojAssemblyReference.cache
-D:\Visual Studio projects\Mobile Apps\Bootleg Facebook\SocialApp\SocialApp\obj\Debug\MonoAndroid81\res\drawable\bridge.png
-D:\Visual Studio projects\Mobile Apps\Bootleg Facebook\SocialApp\SocialApp\obj\Debug\MonoAndroid81\res\drawable\longboy.png
-D:\Visual Studio projects\Mobile Apps\Bootleg Facebook\SocialApp\SocialApp\obj\Debug\MonoAndroid81\res\layout\commentslayout.xml
 D:\Visual Studio projects\Mobile Apps\Bootleg Facebook\SocialApp\SocialApp\obj\Debug\MonoAndroid81\linksrc\SocialApp.pdb

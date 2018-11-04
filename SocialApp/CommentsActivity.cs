@@ -13,13 +13,13 @@ using Android.Widget;
 namespace SocialApp
 {
     [Activity(Label = "CommentsActivity")]
-    public class CommentsActivity : ListActivity
+    class CommentsActivity : ListActivity
     {
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
 
-            SetContentView(Resource.Layout.commentsLayout);
+            SetContentView(Resource.Layout.commentSection);
             ListAdapter = new CommentsAdapter(this, DataTransfer.Tranfer);
         }
     }

@@ -47,7 +47,7 @@ namespace SocialApp
             bool likeOnce = false;
             View view = convertView; // re-use an existing view, if one is available
             if (view == null) // otherwise create a new one
-                view = context.LayoutInflater.Inflate(Resource.Layout.postLayout, null);
+                view = context.LayoutInflater.Inflate(Resource.Layout.commentsLayout, null);
             view.FindViewById<TextView>(Resource.Id.ownerTextView).Text = items[position].PostName;
             view.FindViewById<TextView>(Resource.Id.textView1).Text = items[position].PostDate;
             view.FindViewById<TextView>(Resource.Id.textView2).Text = items[position].PostText;

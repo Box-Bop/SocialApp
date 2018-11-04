@@ -20,7 +20,7 @@ namespace SocialApp
         public int PostLikes { get; set; }
         public int PostCommentsAmount { get; set; }
         public string PostProfilePic { get; set; } = " ";
-        public string PostImage { get; set; } = " ";
+        public string PostImage { get; set; } = "";
         public List<CommentsInfo> PostCommentsInfo { get; set; }
     }
 }
