@@ -70,10 +70,34 @@ namespace SocialApp
                             PostText = "Your post is a lorem ipsum text",
                             PostLikes = 4,
                             PostProfilePic = "okhand",
+                            PostImage = "longboy"
+                        }
+                    }
+                });
+            post.Add(
+                new PostInfo
+                {
+                    PostName = "Memer",
+                    PostDate = Convert.ToString(DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss")),
+                    PostText = "They don't think it do be like this sometimes, but it do lmao",
+                    PostLikes = 133,
+                    PostCommentsAmount = 1,
+                    PostProfilePic = "pic2",
+                    PostImage = "butitdo",
+                    PostCommentsInfo = new List<CommentsInfo>
+                        {
+                        new CommentsInfo
+                        {
+                            PostName = "Lorem Ipsum",
+                            PostDate = Convert.ToString(DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss")),
+                            PostText = "hueh",
+                            PostLikes = 4,
+                            PostProfilePic = "bridge",
                             PostImage = ""
                         }
                     }
                 });
+
             var comments = FindViewById<Button>(Resource.Id.button1);
             //comments.Click += Comments_Click;
             ListAdapter = new CustomAdapter(this, post);
