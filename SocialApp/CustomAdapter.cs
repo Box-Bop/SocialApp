@@ -15,7 +15,7 @@ namespace SocialApp
     class CustomAdapter : BaseAdapter<PostInfo>
     {
         private Activity _context;
-
+        public bool likeOnce = false;
         //constructor
         public CustomAdapter(Activity context)
         {
@@ -44,7 +44,6 @@ namespace SocialApp
 
         public override View GetView(int position, View convertView, ViewGroup parent)
         {
-            bool likeOnce = false;
             View view = convertView; // re-use an existing view, if one is available
             if (view == null) // otherwise create a new one
                 view = context.LayoutInflater.Inflate(Resource.Layout.postLayout, null);
@@ -65,31 +64,59 @@ namespace SocialApp
                 view.FindViewById<ImageView>(Resource.Id.imageView2).Visibility = ViewStates.Invisible;
             }
             var like = view.FindViewById<Button>(Resource.Id.likeButton1);
-
-            like.Click += (sender, e) =>
-            {
-                if (likeOnce == false)
-                {
-                    var text = like.Text;
-                    like.Text = "👍: " + Convert.ToString(Convert.ToInt16(text.Substring(3)) + 1);
-                    likeOnce = true;
-                }
-                else
-                {
-                    var text = like.Text;
-                    like.Text = "👍: " + Convert.ToString(Convert.ToInt16(text.Substring(3)) - 1);
-                    likeOnce = false;
-                }
-            };
+            like.Tag = position;
+            like.Click += Like_Click;
+            //like.Click += (sender, e) =>
+            //{
+            //    if (likeOnce == false)
+            //    {
+            //        var text = like.Text;
+            //        like.Text = "👍: " + Convert.ToString(Convert.ToDouble(text.Substring(3)) + 1);
+            //        likeOnce = true;
+            //    }
+            //    else
+            //    {
+            //        var text = like.Text;
+            //        like.Text = "👍: " + Convert.ToString(Convert.ToDouble(text.Substring(3)) - 1);
+            //        likeOnce = false;
+            //    }
+            //};
 
             var commentButton = view.FindViewById<Button>(Resource.Id.button1);
-
-            commentButton.Click += (s, e) =>
-            {
-                DataTransfer.Tranfer = items[position].PostCommentsInfo;
-                context.StartActivity(typeof(CommentsActivity));
-            };
+            commentButton.Click += CommentButton_Click;
+            commentButton.Tag = position;
+            //commentButton.Click += (s, e) =>
+            //{
+            //    DataTransfer.Tranfer = items[position].PostCommentsInfo;
+            //    context.StartActivity(typeof(CommentsActivity));
+            //};
             return view;
+        }
+
+        private void CommentButton_Click(object sender, EventArgs e)
+        {
+            var commentButton = (Button)sender;
+            var position = (int)commentButton.Tag;
+            DataTransfer.Tranfer = items[position].PostCommentsInfo;
+            context.StartActivity(typeof(CommentsActivity));
+        }
+
+        private void Like_Click(object sender, EventArgs e)
+        {
+            var clickButton = (Button)sender;
+            int position = (int)clickButton.Tag;
+            if (likeOnce == false)
+            {
+                var text = clickButton.Text;
+                clickButton.Text = "👍: " + Convert.ToString(Convert.ToDouble(text.Substring(3)) + 1);
+                likeOnce = true;
+            }
+            else
+            {
+                var text = clickButton.Text;
+                clickButton.Text = "👍: " + Convert.ToString(Convert.ToDouble(text.Substring(3)) - 1);
+                likeOnce = false;
+            }
         }
     }
 }

@@ -59,7 +59,7 @@ namespace SocialApp
                     PostText = "Lorem ipsum dolor sit amet, vestibulum lectus luctus amet. Sed class dui eu diam, commodo nec mi turpis. Sollicitudin pellentesque wisi diam ipsum ultricies, ante volutpat netus in vivamus vero turpis, purus auctor condimentum neque, pharetra lorem. Tristique massa ipsum",
                     PostLikes = 1337,
                     PostCommentsAmount = 439,
-                    PostProfilePic = "bridge",
+                    PostProfilePic = "bread",
                     PostImage = "",
                     PostCommentsInfo = new List<CommentsInfo>
                         {
@@ -97,6 +97,29 @@ namespace SocialApp
                         }
                     }
                 });
+            post.Add(
+    new PostInfo
+    {
+        PostName = "Virko",
+        PostDate = Convert.ToString(DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss")),
+        PostText = "Jeff",
+        PostLikes = 696968,
+        PostCommentsAmount = 439,
+        PostProfilePic = "bridge",
+        PostImage = "",
+        PostCommentsInfo = new List<CommentsInfo>
+            {
+                        new CommentsInfo
+                        {
+                            PostName = "Lebread James",
+                            PostDate = Convert.ToString(DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss")),
+                            PostText = "Approved",
+                            PostLikes = 4,
+                            PostProfilePic = "okhand",
+                            PostImage = ""
+                        }
+        }
+    });
 
             var comments = FindViewById<Button>(Resource.Id.button1);
             //comments.Click += Comments_Click;

@@ -15,7 +15,6 @@ namespace SocialApp
     class CommentsAdapter : BaseAdapter<CommentsInfo>
     {
         private Activity _context;
-
         //constructor
         public CommentsAdapter(Activity context)
         {
@@ -44,7 +43,6 @@ namespace SocialApp
 
         public override View GetView(int position, View convertView, ViewGroup parent)
         {
-            bool likeOnce = false;
             View view = convertView; // re-use an existing view, if one is available
             if (view == null) // otherwise create a new one
                 view = context.LayoutInflater.Inflate(Resource.Layout.commentsLayout, null);
@@ -64,23 +62,43 @@ namespace SocialApp
                 view.FindViewById<ImageView>(Resource.Id.imageView2).Visibility = ViewStates.Invisible;
             }
             var like = view.FindViewById<Button>(Resource.Id.likeButton1);
-
-            like.Click += (sender, e) =>
-            {
-                if (likeOnce == false)
-                {
-                    var text = like.Text;
-                    like.Text = "👍: " + Convert.ToString(Convert.ToInt16(text.Substring(3)) + 1);
-                    likeOnce = true;
-                }
-                else
-                {
-                    var text = like.Text;
-                    like.Text = "👍: " + Convert.ToString(Convert.ToInt16(text.Substring(3)) - 1);
-                    likeOnce = false;
-                }
-            };
+            like.Tag = position;
+            like.Click += Like_Click;
+            //like.Click += (sender, e) =>
+            //{
+            //    if (likeOnce == false)
+            //    {
+            //        var text = like.Text;
+            //        like.Text = "👍: " + Convert.ToString(Convert.ToDouble(text.Substring(3)) + 1);
+            //        likeOnce = true;
+            //    }
+            //    else
+            //    {
+            //        var text = like.Text;
+            //        like.Text = "👍: " + Convert.ToString(Convert.ToDouble(text.Substring(3)) - 1);
+            //        likeOnce = false;
+            //    }
+            //};
             return view;
+        }
+
+        private void Like_Click(object sender, EventArgs e)
+        {
+            bool likeOnce = false;
+            var clickButton = (Button)sender;
+            int position = (int)clickButton.Tag;
+            if (likeOnce == false)
+            {
+                var text = clickButton.Text;
+                clickButton.Text = "👍: " + Convert.ToString(Convert.ToDouble(text.Substring(3)) + 1);
+                likeOnce = true;
+            }
+            else
+            {
+                var text = clickButton.Text;
+                clickButton.Text = "👍: " + Convert.ToString(Convert.ToDouble(text.Substring(3)) - 1);
+                likeOnce = false;
+            }
         }
     }
 }

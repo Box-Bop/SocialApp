@@ -74,3 +74,5 @@ D:\Visual Studio projects\Mobile Apps\Bootleg Facebook\SocialApp\SocialApp\obj\D
 D:\Visual Studio projects\Mobile Apps\Bootleg Facebook\SocialApp\SocialApp\obj\Debug\MonoAndroid81\android\assets\System.Xml.pdb
 D:\Visual Studio projects\Mobile Apps\Bootleg Facebook\SocialApp\SocialApp\obj\Debug\MonoAndroid81\res\drawable\butitdo.jpg
 D:\Visual Studio projects\Mobile Apps\Bootleg Facebook\SocialApp\SocialApp\obj\Debug\MonoAndroid81\res\drawable\bckgrnd.png
+D:\Visual Studio projects\Mobile Apps\Bootleg Facebook\SocialApp\SocialApp\obj\Debug\MonoAndroid81\res\drawable\bread.jpg
+D:\Visual Studio projects\Mobile Apps\Bootleg Facebook\SocialApp\SocialApp\obj\Debug\MonoAndroid81\linksrc\SocialApp.pdb

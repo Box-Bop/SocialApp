@@ -9,7 +9,6 @@
 		android:minHeight="25px"
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
-		android:background="@drawable/bckgrnd"
 		android:id="@+id/linearLayout2" >
 		<LinearLayout
 			android:orientation="horizontal"
