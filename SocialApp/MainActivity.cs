@@ -12,13 +12,14 @@ namespace SocialApp
     [Activity(Label = "@string/app_name", Theme = "@style/AppTheme", MainLauncher = true)]
     public class MainActivity : ListActivity
     {
+        public List<PostInfo> post = new List<PostInfo>();
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
             // Set our view from the "main" layout resource
             SetContentView(Resource.Layout.activity_main);
 
-            List<PostInfo> post = new List<PostInfo>();
+            //List<PostInfo> post = new List<PostInfo>();
             post.Add(
                     new PostInfo
                     {
@@ -98,17 +99,17 @@ namespace SocialApp
                     }
                 });
             post.Add(
-    new PostInfo
-    {
-        PostName = "Virko",
-        PostDate = Convert.ToString(DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss")),
-        PostText = "Jeff",
-        PostLikes = 696968,
-        PostCommentsAmount = 439,
-        PostProfilePic = "bridge",
-        PostImage = "",
-        PostCommentsInfo = new List<CommentsInfo>
-            {
+                new PostInfo
+                {
+                    PostName = "Virko",
+                    PostDate = Convert.ToString(DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss")),
+                    PostText = "Jeff",
+                    PostLikes = 68,
+                    PostCommentsAmount = 439,
+                    PostProfilePic = "bridge",
+                    PostImage = "",
+                    PostCommentsInfo = new List<CommentsInfo>
+                        {
                         new CommentsInfo
                         {
                             PostName = "Lebread James",
@@ -118,12 +119,48 @@ namespace SocialApp
                             PostProfilePic = "okhand",
                             PostImage = ""
                         }
-        }
-    });
+                    }
+                });
 
             var comments = FindViewById<Button>(Resource.Id.button1);
             //comments.Click += Comments_Click;
             ListAdapter = new CustomAdapter(this, post);
+
+            var newPost = FindViewById<Button>(Resource.Id.postButton);
+            newPost.Click += NewPost_Click;
+        }
+
+        private void NewPost_Click(object sender, EventArgs e)
+        {
+            var comment = FindViewById<EditText>(Resource.Id.textInputEditText1);
+            if (!String.IsNullOrEmpty(comment.Text))
+            {
+                post.Add(
+                new PostInfo
+                {
+                    PostName = "NewUser",
+                    PostDate = Convert.ToString(DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss")),
+                    PostText = comment.Text,
+                    PostLikes = 35,
+                    PostCommentsAmount = 1,
+                    PostProfilePic = "bridge",
+                    PostImage = "",
+                    PostCommentsInfo = new List<CommentsInfo>
+                        {
+                        new CommentsInfo
+                        {
+                            PostName = "Lebread James",
+                            PostDate = Convert.ToString(DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss")),
+                            PostText = "Approved",
+                            PostLikes = 4,
+                            PostProfilePic = "okhand",
+                            PostImage = ""
+                        }
+                    }
+                });
+                comment.Text = "";
+                ListAdapter = new CustomAdapter(this, post);
+            }
         }
 
         //private void Comments_Click(object sender, EventArgs e)

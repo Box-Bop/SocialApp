@@ -83,8 +83,8 @@ namespace SocialApp
             //};
 
             var commentButton = view.FindViewById<Button>(Resource.Id.button1);
-            commentButton.Click += CommentButton_Click;
             commentButton.Tag = position;
+            commentButton.Click += CommentButton_Click;
             //commentButton.Click += (s, e) =>
             //{
             //    DataTransfer.Tranfer = items[position].PostCommentsInfo;
