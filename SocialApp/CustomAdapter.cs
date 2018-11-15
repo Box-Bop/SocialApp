@@ -15,7 +15,7 @@ namespace SocialApp
     class CustomAdapter : BaseAdapter<PostInfo>
     {
         private Activity _context;
-        public bool likeOnce = false;
+        //public bool likeOnce = false;
         //constructor
         public CustomAdapter(Activity context)
         {
@@ -85,7 +85,6 @@ namespace SocialApp
             var commentButton = view.FindViewById<Button>(Resource.Id.button1);
             commentButton.Tag = position;
             commentButton.Click += CommentButton_Click;
-            //commentButton.Click += (s, e) =>
             //{
             //    DataTransfer.Tranfer = items[position].PostCommentsInfo;
             //    context.StartActivity(typeof(CommentsActivity));
@@ -103,13 +102,14 @@ namespace SocialApp
 
         private void Like_Click(object sender, EventArgs e)
         {
+            bool likeOnce = false;
             var clickButton = (Button)sender;
             int position = (int)clickButton.Tag;
             if (likeOnce == false)
             {
                 var text = clickButton.Text;
                 clickButton.Text = "👍: " + Convert.ToString(Convert.ToDouble(text.Substring(3)) + 1);
-                likeOnce = true;
+                //likeOnce = true;
             }
             else
             {

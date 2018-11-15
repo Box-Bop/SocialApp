@@ -2,7 +2,7 @@ package md502270526ea2f15b9616bf9bb744ddd92;
 
 
 public class CommentsActivity
-	extends android.app.ListActivity
+	extends android.support.v7.app.AppCompatActivity
 	implements
 		mono.android.IGCUserPeer
 {

@@ -15,6 +15,7 @@ namespace SocialApp
     class CommentsAdapter : BaseAdapter<CommentsInfo>
     {
         private Activity _context;
+        public string postText;
         //constructor
         public CommentsAdapter(Activity context)
         {

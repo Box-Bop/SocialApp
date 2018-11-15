@@ -2405,8 +2405,8 @@ namespace SocialApp
 			// aapt resource value: 0x7F0C001A
 			public const int bottom = 2131492890;
 			
-			// aapt resource value: 0x7F020014
-			public const int button1 = 2130837524;
+			// aapt resource value: 0x7F020015
+			public const int button1 = 2130837525;
 			
 			// aapt resource value: 0x7F0C001B
 			public const int buttonPanel = 2131492891;
@@ -2498,11 +2498,11 @@ namespace SocialApp
 			// aapt resource value: 0x7F0C0038
 			public const int image = 2131492920;
 			
-			// aapt resource value: 0x7F020007
-			public const int imageView1 = 2130837511;
+			// aapt resource value: 0x7F020008
+			public const int imageView1 = 2130837512;
 			
-			// aapt resource value: 0x7F020011
-			public const int imageView2 = 2130837521;
+			// aapt resource value: 0x7F020012
+			public const int imageView2 = 2130837522;
 			
 			// aapt resource value: 0x7F0C000C
 			public const int info = 2131492876;
@@ -2519,8 +2519,8 @@ namespace SocialApp
 			// aapt resource value: 0x7F0C003D
 			public const int left = 2131492925;
 			
-			// aapt resource value: 0x7F020013
-			public const int likeButton1 = 2130837523;
+			// aapt resource value: 0x7F020014
+			public const int likeButton1 = 2130837524;
 			
 			// aapt resource value: 0x7F0C000E
 			public const int line1 = 2131492878;
@@ -2534,11 +2534,14 @@ namespace SocialApp
 			// aapt resource value: 0x7F020002
 			public const int linearLayout2 = 2130837506;
 			
-			// aapt resource value: 0x7F020006
-			public const int linearLayout3 = 2130837510;
+			// aapt resource value: 0x7F020007
+			public const int linearLayout3 = 2130837511;
 			
-			// aapt resource value: 0x7F020012
-			public const int linearLayout4 = 2130837522;
+			// aapt resource value: 0x7F020013
+			public const int linearLayout4 = 2130837523;
+			
+			// aapt resource value: 0x7F020006
+			public const int list = 2130837510;
 			
 			// aapt resource value: 0x7F0C0040
 			public const int listMode = 2131492928;
@@ -2579,8 +2582,8 @@ namespace SocialApp
 			// aapt resource value: 0x7F0C0013
 			public const int notification_main_column_container = 2131492883;
 			
-			// aapt resource value: 0x7F020008
-			public const int ownerTextView = 2130837512;
+			// aapt resource value: 0x7F020009
+			public const int ownerTextView = 2130837513;
 			
 			// aapt resource value: 0x7F0C004D
 			public const int parallax = 2131492941;
@@ -2738,11 +2741,11 @@ namespace SocialApp
 			// aapt resource value: 0x7F0C007C
 			public const int textSpacerNoTitle = 2131492988;
 			
-			// aapt resource value: 0x7F020009
-			public const int textView1 = 2130837513;
-			
 			// aapt resource value: 0x7F020010
-			public const int textView2 = 2130837520;
+			public const int textView1 = 2130837520;
+			
+			// aapt resource value: 0x7F020011
+			public const int textView2 = 2130837521;
 			
 			// aapt resource value: 0x7F0C007D
 			public const int text_input_password_toggle = 2131492989;
