@@ -84,6 +84,7 @@ namespace SocialApp
 
             var commentButton = view.FindViewById<Button>(Resource.Id.button1);
             commentButton.Tag = position;
+            commentButton.Click -= CommentButton_Click;
             commentButton.Click += CommentButton_Click;
             //{
             //    DataTransfer.Tranfer = items[position].PostCommentsInfo;
@@ -102,20 +103,19 @@ namespace SocialApp
 
         private void Like_Click(object sender, EventArgs e)
         {
-            bool likeOnce = false;
             var clickButton = (Button)sender;
             int position = (int)clickButton.Tag;
-            if (likeOnce == false)
+            if (items[position].LikedOnce == false)
             {
                 var text = clickButton.Text;
                 clickButton.Text = "👍: " + Convert.ToString(Convert.ToDouble(text.Substring(3)) + 1);
-                //likeOnce = true;
+                items[position].LikedOnce = true;
             }
             else
             {
                 var text = clickButton.Text;
                 clickButton.Text = "👍: " + Convert.ToString(Convert.ToDouble(text.Substring(3)) - 1);
-                likeOnce = false;
+                items[position].LikedOnce = false;
             }
         }
     }
