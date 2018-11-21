@@ -49,6 +49,8 @@ namespace SocialApp
                         PostImage = ""
                     }
                  );
+            var postComment = FindViewById<EditText>(Resource.Id.textInputEditText1);
+            postComment.Text = "";
             var commentsList = FindViewById<ListView>(Resource.Id.list);
             commentsList.Adapter = new CommentsAdapter(this, DataTransfer.Tranfer);
         }
