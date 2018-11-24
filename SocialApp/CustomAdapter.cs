@@ -79,7 +79,7 @@ namespace SocialApp
         {
             var commentButton = (Button)sender;
             var position = (int)commentButton.Tag;
-            DataTransfer.Tranfer = items[position].PostCommentsInfo;
+            //DataTransfer.Tranfer = items[position].PostCommentsInfo;
             context.StartActivity(typeof(CommentsActivity));
         }
 

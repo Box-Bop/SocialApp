@@ -2,6 +2,12 @@ D:\Visual Studio projects\Mobile Apps\Bootleg Facebook\SocialApp\SocialApp\obj\D
 D:\Visual Studio projects\Mobile Apps\Bootleg Facebook\SocialApp\SocialApp\obj\Debug\MonoAndroid81\android\assets\Java.Interop.dll
 D:\Visual Studio projects\Mobile Apps\Bootleg Facebook\SocialApp\SocialApp\obj\Debug\MonoAndroid81\android\assets\Mono.Android.dll
 D:\Visual Studio projects\Mobile Apps\Bootleg Facebook\SocialApp\SocialApp\obj\Debug\MonoAndroid81\android\assets\mscorlib.dll
+D:\Visual Studio projects\Mobile Apps\Bootleg Facebook\SocialApp\SocialApp\obj\Debug\MonoAndroid81\android\assets\SQLite-net.dll
+D:\Visual Studio projects\Mobile Apps\Bootleg Facebook\SocialApp\SocialApp\obj\Debug\MonoAndroid81\android\assets\SQLitePCLRaw.batteries_green.dll
+D:\Visual Studio projects\Mobile Apps\Bootleg Facebook\SocialApp\SocialApp\obj\Debug\MonoAndroid81\android\assets\SQLitePCLRaw.batteries_v2.dll
+D:\Visual Studio projects\Mobile Apps\Bootleg Facebook\SocialApp\SocialApp\obj\Debug\MonoAndroid81\android\assets\SQLitePCLRaw.core.dll
+D:\Visual Studio projects\Mobile Apps\Bootleg Facebook\SocialApp\SocialApp\obj\Debug\MonoAndroid81\android\assets\SQLitePCLRaw.lib.e_sqlite3.dll
+D:\Visual Studio projects\Mobile Apps\Bootleg Facebook\SocialApp\SocialApp\obj\Debug\MonoAndroid81\android\assets\SQLitePCLRaw.provider.e_sqlite3.dll
 D:\Visual Studio projects\Mobile Apps\Bootleg Facebook\SocialApp\SocialApp\obj\Debug\MonoAndroid81\android\assets\System.Core.dll
 D:\Visual Studio projects\Mobile Apps\Bootleg Facebook\SocialApp\SocialApp\obj\Debug\MonoAndroid81\android\assets\System.dll
 D:\Visual Studio projects\Mobile Apps\Bootleg Facebook\SocialApp\SocialApp\obj\Debug\MonoAndroid81\android\assets\System.Xml.dll
@@ -38,4 +44,6 @@ D:\Visual Studio projects\Mobile Apps\Bootleg Facebook\SocialApp\SocialApp\obj\D
 D:\Visual Studio projects\Mobile Apps\Bootleg Facebook\SocialApp\SocialApp\obj\Debug\MonoAndroid81\android\assets\System.Net.Http.dll
 D:\Visual Studio projects\Mobile Apps\Bootleg Facebook\SocialApp\SocialApp\obj\Debug\MonoAndroid81\android\assets\System.Runtime.Serialization.dll
 D:\Visual Studio projects\Mobile Apps\Bootleg Facebook\SocialApp\SocialApp\obj\Debug\MonoAndroid81\android\assets\System.ServiceModel.Internals.dll
+D:\Visual Studio projects\Mobile Apps\Bootleg Facebook\SocialApp\SocialApp\obj\Debug\MonoAndroid81\android\assets\System.Threading.Tasks.dll
+D:\Visual Studio projects\Mobile Apps\Bootleg Facebook\SocialApp\SocialApp\obj\Debug\MonoAndroid81\android\assets\System.Globalization.dll
 D:\Visual Studio projects\Mobile Apps\Bootleg Facebook\SocialApp\SocialApp\obj\Debug\MonoAndroid81\android\assets\Mono.Security.dll

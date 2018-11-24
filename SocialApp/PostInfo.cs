@@ -9,11 +9,15 @@ using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
+using SQLite;
 
 namespace SocialApp
 {
     public class PostInfo
     {
+        [PrimaryKey, AutoIncrement, Column("_id")]
+        public long Id { get; set; }
+
         public string PostName { get; set; } = " ";
         public string PostDate { get; set; } = " ";
         public string PostText { get; set; } = " ";
@@ -22,6 +26,6 @@ namespace SocialApp
         public string PostProfilePic { get; set; } = " ";
         public string PostImage { get; set; } = "";
         public bool LikedOnce { get; set; } = false;
-        public List<CommentsInfo> PostCommentsInfo { get; set; }
+        //public List<CommentsInfo> PostCommentsInfo { get; set; }
     }
 }

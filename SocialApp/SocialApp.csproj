@@ -60,6 +60,7 @@
     <Compile Include="CommentsAdapter.cs" />
     <Compile Include="CommentsInfo.cs" />
     <Compile Include="CustomAdapter.cs" />
+    <Compile Include="DatabaseService.cs" />
     <Compile Include="DataTransfer.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="PostInfo.cs" />
@@ -98,6 +99,9 @@
     <AndroidResource Include="Resources\mipmap-xxxhdpi\ic_launcher_round.png" />
   </ItemGroup>
   <ItemGroup>
+    <PackageReference Include="sqlite-net-pcl">
+      <Version>1.5.231</Version>
+    </PackageReference>
     <PackageReference Include="Xamarin.Android.Support.Design" Version="27.0.2.1" />
   </ItemGroup>
   <ItemGroup>
