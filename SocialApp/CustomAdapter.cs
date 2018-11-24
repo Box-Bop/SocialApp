@@ -66,30 +66,12 @@ namespace SocialApp
             var like = view.FindViewById<Button>(Resource.Id.likeButton1);
             like.Tag = position;
             like.Click += Like_Click;
-            //like.Click += (sender, e) =>
-            //{
-            //    if (likeOnce == false)
-            //    {
-            //        var text = like.Text;
-            //        like.Text = "👍: " + Convert.ToString(Convert.ToDouble(text.Substring(3)) + 1);
-            //        likeOnce = true;
-            //    }
-            //    else
-            //    {
-            //        var text = like.Text;
-            //        like.Text = "👍: " + Convert.ToString(Convert.ToDouble(text.Substring(3)) - 1);
-            //        likeOnce = false;
-            //    }
-            //};
 
             var commentButton = view.FindViewById<Button>(Resource.Id.button1);
             commentButton.Tag = position;
             commentButton.Click -= CommentButton_Click;
             commentButton.Click += CommentButton_Click;
-            //{
-            //    DataTransfer.Tranfer = items[position].PostCommentsInfo;
-            //    context.StartActivity(typeof(CommentsActivity));
-            //};
+
             return view;
         }
 

@@ -66,21 +66,7 @@ namespace SocialApp
             like.Tag = position;
             like.Click -= Like_Click;
             like.Click += Like_Click;
-            //like.Click += (sender, e) =>
-            //{
-            //    if (likeOnce == false)
-            //    {
-            //        var text = like.Text;
-            //        like.Text = "👍: " + Convert.ToString(Convert.ToDouble(text.Substring(3)) + 1);
-            //        likeOnce = true;
-            //    }
-            //    else
-            //    {
-            //        var text = like.Text;
-            //        like.Text = "👍: " + Convert.ToString(Convert.ToDouble(text.Substring(3)) - 1);
-            //        likeOnce = false;
-            //    }
-            //};
+
             return view;
         }
 

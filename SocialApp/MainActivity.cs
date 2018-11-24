@@ -162,12 +162,5 @@ namespace SocialApp
                 ListAdapter = new CustomAdapter(this, post);
             }
         }
-
-        //private void Comments_Click(object sender, EventArgs e)
-        //{
-        //    DataTransfer.Tranfer = post[e.Position].PostCommentsInfo;
-        //    var comments = new Intent(this, typeof(CommentsActivity));
-        //    StartActivity(comments);
-        //}
     }
 }
