@@ -17,7 +17,7 @@ namespace SocialApp
     {
         [PrimaryKey, AutoIncrement, Column("_id")]
         public long Id { get; set; }
-
+        
         public string PostName { get; set; } = " ";
         public string PostDate { get; set; } = " ";
         public string PostText { get; set; } = " ";

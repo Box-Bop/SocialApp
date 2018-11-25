@@ -23,10 +23,10 @@ namespace SocialApp
         }
         List<PostInfo> items;
         Activity context;
-        public CustomAdapter(Activity context, List<PostInfo> item) : base()
+        public CustomAdapter(Activity context, List<PostInfo> items) : base()
         {
             this.context = context;
-            this.items = item;
+            this.items = items;
 
         }
 

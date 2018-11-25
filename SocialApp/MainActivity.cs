@@ -18,7 +18,7 @@ namespace SocialApp
             // Set our view from the "main" layout resource
             SetContentView(Resource.Layout.activity_main);
 
-            var postsListView = FindViewById<ListView>(Resource.Id.list);
+            var postsListView = FindViewById<ListView>(Resource.Id.listView1);
             var addPostEditText = FindViewById<EditText>(Resource.Id.textInputEditText1);
             var addPostButton = FindViewById<Button>(Resource.Id.button1);
 
@@ -29,7 +29,7 @@ namespace SocialApp
 
 
             var posts = databaseService.GetAllStocks();
-
+            var test = posts.ToList();
             postsListView.Adapter = new CustomAdapter(this, posts.ToList());
 
             addPostButton.Click += delegate
