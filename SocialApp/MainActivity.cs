@@ -10,7 +10,7 @@ using Android.Content;
 namespace SocialApp
 {
     [Activity(Label = "@string/app_name", Theme = "@style/AppTheme", MainLauncher = true)]
-    public class MainActivity : ListActivity
+    public class MainActivity : AppCompatActivity
     {
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -20,7 +20,7 @@ namespace SocialApp
 
             var postsListView = FindViewById<ListView>(Resource.Id.listView1);
             var addPostEditText = FindViewById<EditText>(Resource.Id.textInputEditText1);
-            var addPostButton = FindViewById<Button>(Resource.Id.button1);
+            var addPostButton = FindViewById<Button>(Resource.Id.postButton);
 
             var databaseService = new DatabaseService();
             databaseService.CreateDatabase();

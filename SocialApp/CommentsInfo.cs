@@ -9,11 +9,14 @@ using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
+using SQLite;
 
 namespace SocialApp
 {
     public class CommentsInfo
     {
+        [PrimaryKey, AutoIncrement, Column("_postid")]
+        public long Id { get; set; }
         public string PostName { get; set; } = " ";
         public string PostDate { get; set; } = " ";
         public string PostText { get; set; } = " ";
