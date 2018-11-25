@@ -24,5 +24,6 @@ namespace SocialApp
         public string PostProfilePic { get; set; } = " ";
         public string PostImage { get; set; } = "";
         public bool LikedOnce { get; set; } = false;
+        //public PostInfo Post { get; set; }
     }
 }

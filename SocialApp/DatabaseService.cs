@@ -38,27 +38,27 @@ namespace SocialApp
                 post.PostCommentsAmount = 3;
                 post.PostProfilePic = "okhand";
                 post.PostImage = "longboy";
-                //post.PostCommentsInfo = new List<CommentsInfo>
-                //{
-                //    new CommentsInfo
-                //    {
-                //        PostName = "Jeff",
-                //        PostDate = Convert.ToString(DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss")),
-                //        PostText = "So close",
-                //        PostLikes = 3,
-                //        PostProfilePic = "bridge",
-                //        PostImage = ""
-                //    },
-                //    new CommentsInfo
-                //    {
-                //        PostName = "Tere",
-                //        PostDate = Convert.ToString(DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss")),
-                //        PostText = "very funny",
-                //        PostLikes = 0,
-                //        PostProfilePic = "okhand",
-                //        PostImage = ""
-                //    }
-                //};
+                post.PostCommentsInfo = new List<CommentsInfo>
+                {
+                    new CommentsInfo
+                    {
+                        PostName = "Jeff",
+                        PostDate = Convert.ToString(DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss")),
+                        PostText = "So close",
+                        PostLikes = 3,
+                        PostProfilePic = "bridge",
+                        PostImage = ""
+                    },
+                    new CommentsInfo
+                    {
+                        PostName = "Tere",
+                        PostDate = Convert.ToString(DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss")),
+                        PostText = "very funny",
+                        PostLikes = 0,
+                        PostProfilePic = "okhand",
+                        PostImage = ""
+                    }
+                };
                 db.Insert(post);
 
                 post.PostName = "Jüri";
@@ -68,18 +68,18 @@ namespace SocialApp
                 post.PostCommentsAmount = 439;
                 post.PostProfilePic = "bread";
                 post.PostImage = "";
-                //post.PostCommentsInfo = new List<CommentsInfo>
-                //{
-                //    new CommentsInfo
-                //    {
-                //        PostName = "Lorem Ipsum",
-                //        PostDate = Convert.ToString(DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss")),
-                //        PostText = "Your post is a lorem ipsum text",
-                //        PostLikes = 4,
-                //        PostProfilePic = "okhand",
-                //        PostImage = "longboy"
-                //    }
-                //};
+                post.PostCommentsInfo = new List<CommentsInfo>
+                {
+                    new CommentsInfo
+                    {
+                        PostName = "Lorem Ipsum",
+                        PostDate = Convert.ToString(DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss")),
+                        PostText = "Your post is a lorem ipsum text",
+                        PostLikes = 4,
+                        PostProfilePic = "okhand",
+                        PostImage = "longboy"
+                    }
+                };
                 db.Insert(post);
 
                 post.PostName = "Memer";
@@ -89,18 +89,18 @@ namespace SocialApp
                 post.PostCommentsAmount = 1;
                 post.PostProfilePic = "pic2";
                 post.PostImage = "butitdo";
-                //post.PostCommentsInfo = new List<CommentsInfo>
-                //{
-                //    new CommentsInfo
-                //    {
-                //        PostName = "Lorem Ipsum",
-                //        PostDate = Convert.ToString(DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss")),
-                //        PostText = "hueh",
-                //        PostLikes = 4,
-                //        PostProfilePic = "bridge",
-                //        PostImage = ""
-                //    }
-                //};
+                post.PostCommentsInfo = new List<CommentsInfo>
+                {
+                    new CommentsInfo
+                    {
+                        PostName = "Lorem Ipsum",
+                        PostDate = Convert.ToString(DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss")),
+                        PostText = "hueh",
+                        PostLikes = 4,
+                        PostProfilePic = "bridge",
+                        PostImage = ""
+                    }
+                };
                 db.Insert(post);
 
                 post.PostName = "Virko";
@@ -110,18 +110,18 @@ namespace SocialApp
                 post.PostCommentsAmount = 439;
                 post.PostProfilePic = "bridge";
                 post.PostImage = "";
-                //post.PostCommentsInfo = new List<CommentsInfo>
-                //    {
-                //    new CommentsInfo
-                //    {
-                //        PostName = "Lebread James",
-                //        PostDate = Convert.ToString(DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss")),
-                //        PostText = "Approved",
-                //        PostLikes = 4,
-                //        PostProfilePic = "okhand",
-                //        PostImage = ""
-                //    }
-                //};
+                post.PostCommentsInfo = new List<CommentsInfo>
+                    {
+                    new CommentsInfo
+                    {
+                        PostName = "Lebread James",
+                        PostDate = Convert.ToString(DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss")),
+                        PostText = "Approved",
+                        PostLikes = 4,
+                        PostProfilePic = "okhand",
+                        PostImage = ""
+                    }
+                };
                 db.Insert(post);
             }
         }
@@ -136,18 +136,18 @@ namespace SocialApp
             newPost.PostCommentsAmount = 1;
             newPost.PostProfilePic = "bridge";
             newPost.PostImage = "";
-            //newPost.PostCommentsInfo = new List<CommentsInfo>
-            //    {
-            //    new CommentsInfo
-            //    {
-            //        PostName = "Lebread James",
-            //        PostDate = Convert.ToString(DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss")),
-            //        PostText = "Approved",
-            //        PostLikes = 4,
-            //        PostProfilePic = "okhand",
-            //        PostImage = ""
-            //    }
-            //};
+            newPost.PostCommentsInfo = new List<CommentsInfo>
+                {
+                new CommentsInfo
+                {
+                    PostName = "Lebread James",
+                    PostDate = Convert.ToString(DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss")),
+                    PostText = "Approved",
+                    PostLikes = 4,
+                    PostProfilePic = "okhand",
+                    PostImage = ""
+                }
+            };
             db.Insert(newPost);
         }
 
