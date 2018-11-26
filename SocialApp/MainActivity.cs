@@ -32,10 +32,12 @@ namespace SocialApp
             var test = posts.ToList();
             postsListView.Adapter = new CustomAdapter(this, posts.ToList());
 
+            //databaseService.DeleteAllPosts();
+
             addPostButton.Click += delegate
             {
                 var postText = addPostEditText.Text;
-                databaseService.AddStock(postText);
+                databaseService.AddPost(postText);
 
                 posts = databaseService.GetAllStocks();
                 postsListView.Adapter = new CustomAdapter(this, posts.ToList());

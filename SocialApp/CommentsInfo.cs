@@ -15,7 +15,7 @@ namespace SocialApp
 {
     public class CommentsInfo
     {
-        [PrimaryKey, AutoIncrement, Column("_postid")]
+        [PrimaryKey, Column("_postid")]
         public long Id { get; set; }
         public string PostName { get; set; } = " ";
         public string PostDate { get; set; } = " ";
@@ -24,6 +24,5 @@ namespace SocialApp
         public string PostProfilePic { get; set; } = " ";
         public string PostImage { get; set; } = "";
         public bool LikedOnce { get; set; } = false;
-        //public PostInfo Post { get; set; }
     }
 }

@@ -23,14 +23,17 @@ namespace SocialApp
             string dbPath = Path.Combine(System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal), "mydatabase.db3");
             db = new SQLiteConnection(dbPath);
             db.CreateTable<PostInfo>();
+            db.CreateTable<CommentsInfo>();
         }
 
         public void CreateTableWithData()
         {
             db.CreateTable<PostInfo>();
+            db.CreateTable<CommentsInfo>();
             if (db.Table<PostInfo>().Count() == 0)
             {
                 var post = new PostInfo();
+                var comment = new CommentsInfo();
                 post.PostName = "Robert";
                 post.PostDate = Convert.ToString(DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss"));
                 post.PostText = "Can we hit 50 likes?";
@@ -38,28 +41,28 @@ namespace SocialApp
                 post.PostCommentsAmount = 3;
                 post.PostProfilePic = "okhand";
                 post.PostImage = "longboy";
-                post.PostCommentsInfo = new List<CommentsInfo>
-                {
-                    new CommentsInfo
-                    {
-                        PostName = "Jeff",
-                        PostDate = Convert.ToString(DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss")),
-                        PostText = "So close",
-                        PostLikes = 3,
-                        PostProfilePic = "bridge",
-                        PostImage = ""
-                    },
-                    new CommentsInfo
-                    {
-                        PostName = "Tere",
-                        PostDate = Convert.ToString(DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss")),
-                        PostText = "very funny",
-                        PostLikes = 0,
-                        PostProfilePic = "okhand",
-                        PostImage = ""
-                    }
-                };
+
                 db.Insert(post);
+
+                comment.Id = post.Id;
+                comment.PostName = "Jeff";
+                comment.PostDate = Convert.ToString(DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss"));
+                comment.PostText = "So close";
+                comment.PostLikes = 3;
+                comment.PostProfilePic = "bridge";
+                comment.PostImage = "";
+
+                db.Insert(comment);
+
+                comment.Id = post.Id;
+                comment.PostName = "Tere";
+                comment.PostDate = Convert.ToString(DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss"));
+                comment.PostText = "very funny";
+                comment.PostLikes = 0;
+                comment.PostProfilePic = "okhand";
+                comment.PostImage = "";
+
+                db.Insert(comment);
 
                 post.PostName = "Jüri";
                 post.PostDate = Convert.ToString(DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss"));
@@ -68,19 +71,18 @@ namespace SocialApp
                 post.PostCommentsAmount = 439;
                 post.PostProfilePic = "bread";
                 post.PostImage = "";
-                post.PostCommentsInfo = new List<CommentsInfo>
-                {
-                    new CommentsInfo
-                    {
-                        PostName = "Lorem Ipsum",
-                        PostDate = Convert.ToString(DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss")),
-                        PostText = "Your post is a lorem ipsum text",
-                        PostLikes = 4,
-                        PostProfilePic = "okhand",
-                        PostImage = "longboy"
-                    }
-                };
+
                 db.Insert(post);
+
+                comment.Id = post.Id;
+                comment.PostName = "Lorem Ipsum";
+                comment.PostDate = Convert.ToString(DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss"));
+                comment.PostText = "Your post is a lorem ipsum text";
+                comment.PostLikes = 4;
+                comment.PostProfilePic = "okhand";
+                comment.PostImage = "longboy";
+
+                db.Insert(comment);
 
                 post.PostName = "Memer";
                 post.PostDate = Convert.ToString(DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss"));
@@ -89,19 +91,18 @@ namespace SocialApp
                 post.PostCommentsAmount = 1;
                 post.PostProfilePic = "pic2";
                 post.PostImage = "butitdo";
-                post.PostCommentsInfo = new List<CommentsInfo>
-                {
-                    new CommentsInfo
-                    {
-                        PostName = "Lorem Ipsum",
-                        PostDate = Convert.ToString(DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss")),
-                        PostText = "hueh",
-                        PostLikes = 4,
-                        PostProfilePic = "bridge",
-                        PostImage = ""
-                    }
-                };
+
                 db.Insert(post);
+
+                comment.Id = post.Id;
+                comment.PostName = "Lorem Ipsum";
+                comment.PostDate = Convert.ToString(DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss"));
+                comment.PostText = "hueh";
+                comment.PostLikes = 4;
+                comment.PostProfilePic = "bridge";
+                comment.PostImage = "";
+
+                db.Insert(comment);
 
                 post.PostName = "Virko";
                 post.PostDate = Convert.ToString(DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss"));
@@ -110,23 +111,23 @@ namespace SocialApp
                 post.PostCommentsAmount = 439;
                 post.PostProfilePic = "bridge";
                 post.PostImage = "";
-                post.PostCommentsInfo = new List<CommentsInfo>
-                    {
-                    new CommentsInfo
-                    {
-                        PostName = "Lebread James",
-                        PostDate = Convert.ToString(DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss")),
-                        PostText = "Approved",
-                        PostLikes = 4,
-                        PostProfilePic = "okhand",
-                        PostImage = ""
-                    }
-                };
+
                 db.Insert(post);
+
+                comment.Id = post.Id;
+                comment.PostName = "Lebread James";
+                comment.PostDate = Convert.ToString(DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss"));
+                comment.PostText = "Approved";
+                comment.PostLikes = 4;
+                comment.PostProfilePic = "okhand";
+                comment.PostImage = "";
+
+                db.Insert(comment);
+
             }
         }
 
-        public void AddStock(string postText)
+        public void AddPost(string postText)
         {
             var newPost = new PostInfo();
             newPost.PostName = "NewUser";
@@ -136,22 +137,22 @@ namespace SocialApp
             newPost.PostCommentsAmount = 1;
             newPost.PostProfilePic = "bridge";
             newPost.PostImage = "";
-            newPost.PostCommentsInfo = new List<CommentsInfo>
-                {
-                new CommentsInfo
-                {
-                    PostName = "Lebread James",
-                    PostDate = Convert.ToString(DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss")),
-                    PostText = "Approved",
-                    PostLikes = 4,
-                    PostProfilePic = "okhand",
-                    PostImage = ""
-                }
-            };
+            //newPost.PostCommentsInfo = new List<CommentsInfo>
+            //    {
+            //    new CommentsInfo
+            //    {
+            //        PostName = "Lebread James",
+            //        PostDate = Convert.ToString(DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss")),
+            //        PostText = "Approved",
+            //        PostLikes = 4,
+            //        PostProfilePic = "okhand",
+            //        PostImage = ""
+            //    }
+            //};
             db.Insert(newPost);
         }
 
-        public void DeleteStock(long id)
+        public void DeletePost(long id)
         {
             db.Delete<PostInfo>(id);
         }
@@ -160,6 +161,12 @@ namespace SocialApp
         {
             var table = db.Table<PostInfo>();
             return table;
+        }
+
+        public void DeleteAllPosts()
+        {
+            db.DropTable<PostInfo>();
+            db.DropTable<CommentsInfo>();
         }
     }
 }
