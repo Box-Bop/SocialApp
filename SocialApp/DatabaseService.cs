@@ -17,19 +17,21 @@ namespace SocialApp
     class DatabaseService
     {
         SQLiteConnection db;
+        SQLiteConnection db2;
         //public List<PostInfo> post = new List<PostInfo>();
         public void CreateDatabase()
         {
             string dbPath = Path.Combine(System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal), "mydatabase.db3");
             db = new SQLiteConnection(dbPath);
+            db2 = new SQLiteConnection(dbPath);
             db.CreateTable<PostInfo>();
-            db.CreateTable<CommentsInfo>();
+            db2.CreateTable<CommentsInfo>();
         }
 
         public void CreateTableWithData()
         {
             db.CreateTable<PostInfo>();
-            db.CreateTable<CommentsInfo>();
+            db2.CreateTable<CommentsInfo>();
             if (db.Table<PostInfo>().Count() == 0)
             {
                 var post = new PostInfo();
@@ -52,7 +54,7 @@ namespace SocialApp
                 comment.PostProfilePic = "bridge";
                 comment.PostImage = "";
 
-                db.Insert(comment);
+                db2.Insert(comment);
 
                 comment.Id = post.Id;
                 comment.PostName = "Tere";
@@ -62,7 +64,7 @@ namespace SocialApp
                 comment.PostProfilePic = "okhand";
                 comment.PostImage = "";
 
-                db.Insert(comment);
+                db2.Insert(comment);
 
                 post.PostName = "Jüri";
                 post.PostDate = Convert.ToString(DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss"));
@@ -82,7 +84,7 @@ namespace SocialApp
                 comment.PostProfilePic = "okhand";
                 comment.PostImage = "longboy";
 
-                db.Insert(comment);
+                db2.Insert(comment);
 
                 post.PostName = "Memer";
                 post.PostDate = Convert.ToString(DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss"));
@@ -102,7 +104,7 @@ namespace SocialApp
                 comment.PostProfilePic = "bridge";
                 comment.PostImage = "";
 
-                db.Insert(comment);
+                db2.Insert(comment);
 
                 post.PostName = "Virko";
                 post.PostDate = Convert.ToString(DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss"));
@@ -122,7 +124,7 @@ namespace SocialApp
                 comment.PostProfilePic = "okhand";
                 comment.PostImage = "";
 
-                db.Insert(comment);
+                db2.Insert(comment);
 
             }
         }
@@ -157,7 +159,7 @@ namespace SocialApp
             db.Delete<PostInfo>(id);
         }
 
-        public TableQuery<PostInfo> GetAllStocks()
+        public TableQuery<PostInfo> GetAllPosts()
         {
             var table = db.Table<PostInfo>();
             return table;
@@ -167,6 +169,7 @@ namespace SocialApp
         {
             db.DropTable<PostInfo>();
             db.DropTable<CommentsInfo>();
+            db2.DropTable<CommentsInfo>();
         }
     }
 }

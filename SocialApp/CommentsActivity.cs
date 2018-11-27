@@ -22,7 +22,7 @@ namespace SocialApp
             base.OnCreate(savedInstanceState);
             SetContentView(Resource.Layout.commentSection);
             var commentsList = FindViewById<ListView>(Resource.Id.list);
-            commentsList.Adapter = new CommentsAdapter(this, DataTransfer.Tranfer);
+            commentsList.Adapter = new CommentsAdapter(this, DataTransfer.SelectedPostID);
 
 
             var comment = FindViewById<Button>(Resource.Id.postButton);
@@ -38,7 +38,7 @@ namespace SocialApp
         }
         private void Comment_Click(object sender, EventArgs e)
         {
-            DataTransfer.Tranfer.Add(
+            DataTransfer.SelectedPostID.Add(
                     new CommentsInfo
                     {
                         PostName = "NewUser",
@@ -52,7 +52,7 @@ namespace SocialApp
             var postComment = FindViewById<EditText>(Resource.Id.textInputEditText1);
             postComment.Text = "";
             var commentsList = FindViewById<ListView>(Resource.Id.list);
-            commentsList.Adapter = new CommentsAdapter(this, DataTransfer.Tranfer);
+            commentsList.Adapter = new CommentsAdapter(this, DataTransfer.SelectedPostID);
         }
     }
 }

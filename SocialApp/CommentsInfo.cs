@@ -15,7 +15,7 @@ namespace SocialApp
 {
     public class CommentsInfo
     {
-        [PrimaryKey, Column("_postid")]
+        [Column("_postid")]
         public long Id { get; set; }
         public string PostName { get; set; } = " ";
         public string PostDate { get; set; } = " ";

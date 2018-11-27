@@ -23,12 +23,11 @@ namespace SocialApp
             var addPostButton = FindViewById<Button>(Resource.Id.postButton);
 
             var databaseService = new DatabaseService();
+
             databaseService.CreateDatabase();
             databaseService.CreateTableWithData();
 
-
-
-            var posts = databaseService.GetAllStocks();
+            var posts = databaseService.GetAllPosts();
             var test = posts.ToList();
             postsListView.Adapter = new CustomAdapter(this, posts.ToList());
 
@@ -39,7 +38,7 @@ namespace SocialApp
                 var postText = addPostEditText.Text;
                 databaseService.AddPost(postText);
 
-                posts = databaseService.GetAllStocks();
+                posts = databaseService.GetAllPosts();
                 postsListView.Adapter = new CustomAdapter(this, posts.ToList());
 
                 addPostEditText.Text = "";

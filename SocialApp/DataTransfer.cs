@@ -14,6 +14,6 @@ namespace SocialApp
 {
     class DataTransfer
     {
-        public static List<CommentsInfo> Tranfer { get; set; }
+        public static long SelectedPostID { get; set; }
     }
 }
